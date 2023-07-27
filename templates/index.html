@@ -59,12 +59,12 @@
                         let profile = articles[i]["profile"];
                         let profile_html = "";
                         if (profile) {
-                            profile_html = `<img src="../static/${profile}" class="card-profile" alt="..." />`
+                            profile_html = `<img src="../${profile}" class="card-profile" alt="..." />`
                         }
                         let temp_html = `
         <div class="col-4">
           <div class="card">
-            <img src="../static/${file}" class="card-img" alt="..." />
+            <img src="../${file}" class="card-img" alt="..." />
             <div class="card-body">
                 ${profile_html}
                 <h5 class="card-title">${title}</h5>
